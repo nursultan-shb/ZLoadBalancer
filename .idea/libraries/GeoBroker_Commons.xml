@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="GeoBroker-Commons">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/../GeoBroker/geobroker/GeoBroker-Commons" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="file://$PROJECT_DIR$/../GeoBroker/geobroker/GeoBroker-Commons" />
+      <root url="file://$PROJECT_DIR$/../GeoBroker/geobroker/GeoBroker-Commons/src/main/java" />
+      <root url="file://$PROJECT_DIR$/../GeoBroker/geobroker/GeoBroker-Commons/src/test/java" />
+    </SOURCES>
+  </library>
+</component>
