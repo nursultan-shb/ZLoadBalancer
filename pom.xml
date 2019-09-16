@@ -6,7 +6,13 @@
 
     <groupId>ms.nshabykeev</groupId>
     <artifactId>LoadBalancer</artifactId>
+    <packaging>pom</packaging>
     <version>1.0</version>
+    <modules>
+        <module>LoadBalancer-Commons</module>
+        <module>LoadBalancer-Server</module>
+        <module>LoadBalancer-PlanCreator</module>
+    </modules>
 
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -45,6 +51,11 @@
             <groupId>com.google.code.gson</groupId>
             <artifactId>gson</artifactId>
             <version>2.8.1</version>
+        </dependency>
+        <dependency>
+            <groupId>ms.nshabykeev</groupId>
+            <artifactId>LoadBalancer-Commons</artifactId>
+            <version>1.0</version>
         </dependency>
     </dependencies>
 

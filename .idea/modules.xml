@@ -3,6 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/LoadBalancer.iml" filepath="$PROJECT_DIR$/LoadBalancer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoadBalancer-Commons/LoadBalancer-Commons.iml" filepath="$PROJECT_DIR$/LoadBalancer-Commons/LoadBalancer-Commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoadBalancer-PlanCreator/LoadBalancer-PlanCreator.iml" filepath="$PROJECT_DIR$/LoadBalancer-PlanCreator/LoadBalancer-PlanCreator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LoadBalancer-Server/LoadBalancer-Server.iml" filepath="$PROJECT_DIR$/LoadBalancer-Server/LoadBalancer-Server.iml" />
     </modules>
   </component>
 </project>

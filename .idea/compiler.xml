@@ -6,11 +6,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="LoadBalancer" />
+        <module name="LoadBalancer-Commons" />
+        <module name="LoadBalancer-PlanCreator" />
+        <module name="LoadBalancer-Server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="1.8">
       <module name="LoadBalancer" target="1.8" />
+      <module name="LoadBalancer-Commons" target="1.8" />
+      <module name="LoadBalancer-PlanCreator" target="1.8" />
+      <module name="LoadBalancer-Server" target="1.8" />
+      <module name="PlanAnalyzer" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>
