@@ -1,4 +1,4 @@
-package ms.shabykeev.loadbalancer.plan;
+package ms.shabykeev.loadbalancer.plan.server;
 
 
 import ms.shabykeev.loadbalancer.common.server.Configuration;

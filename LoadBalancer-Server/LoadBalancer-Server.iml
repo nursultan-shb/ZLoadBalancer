@@ -31,6 +31,7 @@
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="LoadBalancer-Commons" />
     <orderEntry type="library" name="Maven: com.moandjiezana.toml:toml4j:0.7.2" level="project" />
+    <orderEntry type="library" name="Maven: org.locationtech.jts:jts-core:1.15.0" level="project" />
     <orderEntry type="library" name="Maven: de.hasenburg:GeoBroker-Commons:1.1" level="project" />
     <orderEntry type="library" name="Maven: com.esotericsoftware:kryo:4.0.0" level="project" />
     <orderEntry type="library" name="Maven: com.esotericsoftware:reflectasm:1.11.3" level="project" />

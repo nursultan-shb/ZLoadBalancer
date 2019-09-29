@@ -4,8 +4,9 @@ import org.zeromq.ZFrame;
 
 public class ServerLoadMetrics {
 
-    public ServerLoadMetrics(String server, Double load){
+    public ServerLoadMetrics(String server, String localLoadAnalyzer, Double load){
         this.server = server;
+        this.localLoadAnalyzer = localLoadAnalyzer;
         this.load = load;
     }
 
@@ -31,5 +32,17 @@ public class ServerLoadMetrics {
      * A pub/sub server, i.e., GeoBroker
      * */
     private String server;
+
+    public String getLocalLoadAnalyzer() {
+        return localLoadAnalyzer;
+    }
+
+    public void setLocalLoadAnalyzer(String localLoadAnalyzer) {
+        this.localLoadAnalyzer = localLoadAnalyzer;
+    }
+
+    private String localLoadAnalyzer;
     private Double load;
+
+
 }

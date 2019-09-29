@@ -14,6 +14,12 @@ public class Configuration {
     private Integer backendPort = 5559;
     private String address;
 
+    public String getPlanCreatorAddress() {
+        return planCreatorAddress;
+    }
+
+    private String planCreatorAddress;
+
     public Integer getPlanGenerationDelay() {
         return planGenerationDelay;
     }
@@ -65,6 +71,7 @@ public class Configuration {
         c.frontendPort = Math.toIntExact(toml_server.getLong("frontendPort", c.frontendPort.longValue()));
         c.backendPort = Math.toIntExact(toml_server.getLong("backendPort", c.backendPort.longValue()));
         c.planGenerationDelay = Math.toIntExact(toml_server.getLong("planGenerationDelay", c.planGenerationDelay.longValue()));
+        c.planCreatorAddress = toml_server.getString("planCreatorAddress", c.planCreatorAddress);
         return c;
     }
 }

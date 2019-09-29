@@ -31,7 +31,7 @@ public class LoadBalancerLogic implements IServerLogic {
     @Override
     public void startServer(){
         ZMQProcess_LoadBalancer zmqProcess = new ZMQProcess_LoadBalancer(config.getServerId(), config.getAddress(),
-                config.getFrontendPort(), config.getBackendPort());
+                config.getFrontendPort(), config.getBackendPort(), config.getPlanCreatorAddress());
         processManager.submitZMQProcess(config.getServerId(), zmqProcess);
 
         logger.info(String.format("Started a load balancer successfully on a frontend port: %d and a backend port: %d",

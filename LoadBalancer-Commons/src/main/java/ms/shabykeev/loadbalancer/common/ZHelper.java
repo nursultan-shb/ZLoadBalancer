@@ -45,11 +45,13 @@ public class ZHelper
         sock.setIdentity(identity.getBytes(ZMQ.CHARSET));
     }
 
-    public static void setId(String prefix, Socket sock)
+    public static String setId(String prefix, Socket sock)
     {
         String identity = String.format(prefix + " %04X-%04X", rand.nextInt(), rand.nextInt());
 
         sock.setIdentity(identity.getBytes(ZMQ.CHARSET));
+
+        return identity;
     }
 
     public static List<Socket> buildZPipe(Context ctx)

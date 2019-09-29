@@ -4,11 +4,15 @@ public enum ZMsgType {
     ZPING,
     ZPONG,
     PLAN,
-    ADD_SERVER,
     TOPIC_METRICS,
 
-    SEND_PLAN,
-    GET_METRICS,
+
+    REG_LOAD_BALANCER,
+    ACKREG_LOAD_BALANCER,
+
+    PINGREQ,
+    PINGRESP
+
 
 
 }

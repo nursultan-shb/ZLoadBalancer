@@ -1,193 +1,659 @@
-17:24:21.597 [main           ] INFO  communication.ZMQProcessManager - Started ZMQProcessManager
-17:24:21.613 [main           ] INFO  communication.ZMQProcessManager - Started ZMQProcess_PlanServer with identity plan-creator
-17:24:21.617 [main           ] INFO  plan.PlanServerLogic           - Started a plan creator server successfully on a frontend port: 7000 and a backend port: 7001
-17:24:21.817 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:24:21.821 [Thread-3       ] INFO  generator.Generator            - started plan creation[]
-17:24:22.153 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=906, blue=906} ]
-17:24:22.153 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=907, blue=907} ]
-17:24:22.153 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=908, blue=908} ]
-17:24:22.153 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=909, blue=909} ]
-17:24:22.153 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=910, blue=910} ]
-17:24:22.153 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=911, blue=911} ]
-17:24:22.153 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=912, blue=912} ]
-17:24:22.153 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=913, blue=913} ]
-17:24:22.153 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=914, blue=914} ]
-17:24:22.153 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=915, blue=915} ]
-17:24:22.153 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=916, blue=916} ]
-17:24:22.157 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=917, blue=917} ]
-17:24:22.157 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=918, blue=918} ]
-17:24:22.157 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=919, blue=919} ]
-17:24:22.157 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=920, blue=920} ]
-17:24:22.157 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=921, blue=921} ]
-17:24:22.157 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=922, blue=922} ]
-17:24:22.157 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=923, blue=923} ]
-17:24:22.157 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=924, blue=924} ]
-17:24:22.157 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=925, blue=925} ]
-17:24:22.157 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=926, blue=926} ]
-17:24:22.157 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=927, blue=927} ]
-17:24:22.161 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=928, blue=928} ]
-17:24:22.161 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=929, blue=929} ]
-17:24:22.161 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=930, blue=930} ]
-17:24:22.161 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=931, blue=931} ]
-17:24:24.401 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=932, blue=932} ]
-17:24:25.825 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:24:25.825 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 0 ]
-17:24:27.409 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=933, blue=933} ]
-17:24:30.416 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=934, blue=934} ]
-17:24:31.868 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:24:31.868 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=906, blue=906} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=907, blue=907} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=908, blue=908} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=909, blue=909} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=910, blue=910} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=911, blue=911} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=912, blue=912} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=913, blue=913} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=914, blue=914} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=915, blue=915} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=916, blue=916} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=917, blue=917} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=918, blue=918} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=919, blue=919} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=920, blue=920} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=921, blue=921} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=922, blue=922} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=923, blue=923} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=924, blue=924} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=925, blue=925} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=926, blue=926} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=927, blue=927} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=928, blue=928} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=929, blue=929} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=930, blue=930} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=931, blue=931} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=932, blue=932} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=933, blue=933} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=934, blue=934} ]]
-17:24:33.425 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=935, blue=935} ]
-17:24:35.874 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:24:35.874 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 1 ]
-17:24:36.434 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=936, blue=936} ]
-17:24:39.446 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=937, blue=937} ]
-17:24:41.940 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:24:41.940 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=935, blue=935} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=936, blue=936} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=937, blue=937} ]]
-17:24:42.456 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=938, blue=938} ]
-17:24:45.465 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=939, blue=939} ]
-17:24:45.941 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:24:45.941 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 2 ]
-17:24:48.477 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=940, blue=940} ]
-17:24:51.493 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=941, blue=941} ]
-17:24:52.013 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:24:52.013 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=938, blue=938} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=939, blue=939} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=940, blue=940} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=941, blue=941} ]]
-17:24:54.496 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=942, blue=942} ]
-17:24:56.016 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:24:56.016 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 3 ]
-17:24:57.508 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=943, blue=943} ]
-17:25:00.526 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=944, blue=944} ]
-17:25:02.072 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:25:02.072 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=942, blue=942} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=943, blue=943} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=944, blue=944} ]]
-17:25:03.528 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=945, blue=945} ]
-17:25:06.076 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:25:06.076 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 4 ]
-17:25:06.540 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=946, blue=946} ]
-17:25:09.552 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=947, blue=947} ]
-17:25:12.140 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:25:12.140 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=945, blue=945} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=946, blue=946} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=947, blue=947} ]]
-17:25:12.564 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=948, blue=948} ]
-17:25:15.576 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=949, blue=949} ]
-17:25:16.143 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:25:16.143 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 5 ]
-17:25:18.583 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=950, blue=950} ]
-17:25:21.589 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=951, blue=951} ]
-17:25:22.213 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:25:22.213 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=948, blue=948} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=949, blue=949} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=950, blue=950} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=951, blue=951} ]]
-17:25:24.601 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=952, blue=952} ]
-17:25:26.217 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:25:26.217 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 6 ]
-17:25:27.611 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=953, blue=953} ]
-17:25:30.619 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=954, blue=954} ]
-17:25:32.255 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:25:32.255 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=952, blue=952} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=953, blue=953} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=954, blue=954} ]]
-17:25:33.631 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=955, blue=955} ]
-17:25:36.259 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:25:36.259 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 7 ]
-17:25:36.643 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=956, blue=956} ]
-17:25:39.655 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=957, blue=957} ]
-17:25:42.320 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:25:42.320 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=955, blue=955} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=956, blue=956} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=957, blue=957} ]]
-17:25:42.660 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=958, blue=958} ]
-17:25:45.672 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=959, blue=959} ]
-17:25:46.324 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:25:46.324 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 8 ]
-17:25:48.678 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=960, blue=960} ]
-17:25:51.687 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=961, blue=961} ]
-17:25:52.411 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:25:52.411 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=958, blue=958} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=959, blue=959} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=960, blue=960} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=961, blue=961} ]]
-17:25:54.694 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=962, blue=962} ]
-17:25:56.414 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:25:56.414 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 9 ]
-17:25:57.706 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=963, blue=963} ]
-17:26:00.718 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=964, blue=964} ]
-17:26:02.490 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:26:02.490 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=962, blue=962} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=963, blue=963} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=964, blue=964} ]]
-17:26:03.726 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=965, blue=965} ]
-17:26:06.493 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:26:06.493 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 10 ]
-17:26:06.733 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=966, blue=966} ]
-17:26:09.745 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=967, blue=967} ]
-17:26:12.529 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:26:12.529 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=965, blue=965} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=966, blue=966} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=967, blue=967} ]]
-17:26:12.754 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=968, blue=968} ]
-17:26:15.762 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=969, blue=969} ]
-17:26:16.532 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:26:16.532 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 11 ]
-17:26:18.772 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=970, blue=970} ]
-17:26:21.784 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=971, blue=971} ]
-17:26:22.616 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:26:22.616 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=968, blue=968} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=969, blue=969} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=970, blue=970} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=971, blue=971} ]]
-17:26:24.787 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=972, blue=972} ]
-17:26:26.617 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:26:26.617 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 12 ]
-17:26:27.796 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=973, blue=973} ]
-17:26:30.808 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=974, blue=974} ]
-17:26:32.676 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:26:32.676 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=972, blue=972} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=973, blue=973} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=974, blue=974} ]]
-17:26:33.818 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=975, blue=975} ]
-17:26:36.678 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:26:36.678 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 13 ]
-17:26:36.826 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=976, blue=976} ]
-17:26:39.838 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=977, blue=977} ]
-17:26:42.716 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:26:42.716 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=975, blue=975} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=976, blue=976} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=977, blue=977} ]]
-17:26:42.844 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=978, blue=978} ]
-17:26:45.857 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=979, blue=979} ]
-17:26:46.718 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:26:46.718 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 14 ]
-17:26:48.870 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=980, blue=980} ]
-17:26:51.882 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=981, blue=981} ]
-17:26:52.813 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:26:52.813 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=978, blue=978} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=979, blue=979} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=980, blue=980} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=981, blue=981} ]]
-17:26:54.889 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=982, blue=982} ]
-17:26:56.817 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:26:56.817 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 15 ]
-17:26:57.901 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=983, blue=983} ]
-17:27:00.911 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=984, blue=984} ]
-17:27:02.835 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:27:02.835 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=982, blue=982} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=983, blue=983} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=984, blue=984} ]]
-17:27:03.916 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=985, blue=985} ]
-17:27:06.836 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:27:06.836 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 16 ]
-17:27:06.928 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=986, blue=986} ]
-17:27:09.940 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=987, blue=987} ]
-17:27:12.844 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:27:12.844 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=985, blue=985} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=986, blue=986} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=987, blue=987} ]]
-17:27:12.949 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=988, blue=988} ]
-17:27:15.961 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=989, blue=989} ]
-17:27:16.844 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:27:16.844 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 17 ]
-17:27:18.972 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=990, blue=990} ]
-17:27:21.980 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=991, blue=991} ]
-17:27:22.908 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:27:22.908 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=988, blue=988} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=989, blue=989} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=990, blue=990} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=991, blue=991} ]]
-17:27:24.992 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=992, blue=992} ]
-17:27:26.912 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:27:26.912 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 18 ]
-17:27:28.002 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=993, blue=993} ]
-17:27:31.010 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=994, blue=994} ]
-17:27:32.964 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:27:32.964 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=992, blue=992} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=993, blue=993} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=994, blue=994} ]]
-17:27:34.020 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=995, blue=995} ]
-17:27:36.968 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:27:36.968 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 19 ]
-17:27:37.031 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=996, blue=996} ]
-17:27:40.042 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=997, blue=997} ]
-17:27:43.025 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:27:43.025 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=995, blue=995} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=996, blue=996} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=997, blue=997} ]]
-17:27:43.045 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=998, blue=998} ]
-17:27:46.051 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=999, blue=999} ]
-17:27:47.027 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:27:47.027 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 20 ]
-17:27:49.063 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=1000, blue=1000} ]
-17:27:52.075 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=1001, blue=1001} ]
-17:27:53.105 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:27:53.105 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=998, blue=998} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=999, blue=999} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=1000, blue=1000} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=1001, blue=1001} ]]
-17:27:55.085 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=1002, blue=1002} ]
-17:27:57.109 [Thread-3       ] INFO  generator.Generator            - finished plan creation
-17:27:57.109 [plan-creator-server] INFO  plan.ZMQProcess_PlanServer     - Sending plan to load balancers[ send plan 21 ]
-17:27:58.097 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=1003, blue=1003} ]
-17:28:01.103 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=1004, blue=1004} ]
-17:28:03.163 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
-17:28:03.163 [Thread-3       ] INFO  generator.Generator            - started plan creation[[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=1002, blue=1002} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=1003, blue=1003} ], [ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=1004, blue=1004} ]]
-17:28:04.115 [plan-generator ] INFO  metricsQueue.MetricsHolder     - added a message to queue[ local-load-analyzer F1C09F12-A62796C9, TOPIC_METRICS, tcp://0.0.0.0:5559, 0.0, {red=1005, blue=1005} ]
+15:40:58.595 [main           ] INFO  communication.ZMQProcessManager - Started ZMQProcessManager
+15:40:58.608 [main           ] INFO  communication.ZMQProcessManager - Started ZMQProcess_PlanServer with identity plan-creator
+15:40:58.609 [main           ] INFO  server.PlanServerLogic         - Started a plan creator server successfully on a frontend port: 7000 and a backend port: 7015:41:39.052 [loadbalancer   ] INFO  server.ZMQProcess_LoadBalancer - 
+Received a new plan
+15:41:39.052 [loadbalancer   ] INFO  server.ZMQProcess_LoadBalancer - red=broker-server-2
+15:41:39.053 [loadbalancer   ] INFO  server.ZMQProcess_LoadBalancer - ocean=broker-server-2
+15:41:39.053 [loadbalancer   ] INFO  server.ZMQProcess_LoadBalancer - blue=broker-server-2
+15:41:39.053 [loadbalancer   ] INFO  server.ZMQProcess_LoadBalancer - rose=broker-server-1
+15:42:59.106 [loadbalancer   ] INFO  server.ZMQProcess_LoadBalancer - 
+Received a new plan
+15:42:59.107 [loadbalancer   ] INFO  server.ZMQProcess_LoadBalancer - red=broker-server-2
+15:42:59.107 [loadbalancer   ] INFO  server.ZMQProcess_LoadBalancer - ocean=broker-server-2
+15:42:59.107 [loadbalancer   ] INFO  server.ZMQProcess_LoadBalancer - blue=broker-server-2
+15:42:59.107 [loadbalancer   ] INFO  server.ZMQProcess_LoadBalancer - rose=broker-server-2
+rver-1, 80,  ]
+15:41:13.822 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.1,  ]
+15:41:18.982 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:41:18.982 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:41:18.983 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:41:19.066 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80, red=120|rose=15 ]
+15:41:23.896 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.1, blue=4|ocean=4 ]
+15:41:29.074 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:41:33.897 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.1,  ]
+15:41:39.043 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:41:39.043 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:41:39.043 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:41:39.047 [Thread-3       ] INFO  generator.Generator            - sending plan 0
+15:41:39.078 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:41:43.906 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:41:49.086 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:41:53.916 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:41:59.044 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:41:59.044 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:41:59.044 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:41:59.103 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:42:03.924 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:42:09.110 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:42:13.928 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:42:19.056 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:42:19.056 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:42:19.056 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:42:19.115 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:42:23.937 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:42:29.122 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:42:33.944 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:42:39.060 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:42:39.060 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:42:39.060 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:42:39.131 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:42:43.955 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0, red=120|blue=4|ocean=4 ]
+15:42:49.136 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80, rose=70 ]
+15:42:53.961 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.3,  ]
+15:42:59.104 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:42:59.104 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:42:59.104 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:42:59.105 [Thread-3       ] INFO  generator.Generator            - sending plan 1
+15:42:59.142 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:43:03.967 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:43:09.148 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:43:13.974 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:43:19.155 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:43:19.155 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:43:19.156 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:43:19.156 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:43:23.981 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:43:29.161 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:43:33.985 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:43:39.167 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:43:39.167 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:43:39.167 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:43:39.168 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:43:43.992 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:43:49.172 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:43:53.997 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:43:59.177 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:43:59.177 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:43:59.177 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:43:59.177 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:44:04.016 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:44:09.205 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:44:14.022 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:44:19.215 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:44:19.215 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:44:19.215 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:44:19.215 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:44:24.029 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:44:29.220 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:44:34.035 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:44:39.227 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:44:39.227 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:44:39.227 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:44:39.227 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:44:44.040 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:44:49.233 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:44:54.044 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:44:59.239 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:44:59.239 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:44:59.239 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:44:59.239 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:45:04.050 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:45:09.246 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:45:14.055 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:45:19.252 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:45:19.252 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:45:19.253 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:45:19.253 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:45:24.062 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:45:29.257 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:45:34.069 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:45:39.264 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:45:39.264 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:45:39.264 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:45:39.264 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:45:44.075 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:45:49.270 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:45:54.081 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:45:59.277 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:45:59.277 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:45:59.277 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:45:59.277 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:46:04.087 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:46:09.282 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:46:14.092 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:46:19.288 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:46:19.288 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:46:19.289 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:46:19.289 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:46:24.099 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:46:29.292 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:46:34.107 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:46:39.299 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:46:39.299 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:46:39.300 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:46:39.300 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:46:44.113 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:46:49.305 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:46:54.120 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:46:59.309 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:46:59.309 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:46:59.309 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:46:59.309 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:47:04.126 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:47:09.315 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:47:14.132 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:47:19.321 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:47:19.321 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:47:19.321 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:47:19.321 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:47:24.137 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:47:29.326 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:47:34.144 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:47:39.334 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:47:39.334 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:47:39.334 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:47:39.334 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:47:44.150 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:47:49.337 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:47:54.154 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:47:59.343 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:47:59.343 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:47:59.343 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:47:59.343 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+15:48:04.161 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:48:09.348 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:48:14.169 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+15:48:19.356 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+15:48:19.356 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+15:48:19.357 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+15:48:19.357 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:33:02.527 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:33:02.527 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:33:02.534 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:33:02.620 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:33:02.805 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:33:12.632 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:33:12.819 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:33:22.577 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:33:22.577 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:33:22.577 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:33:22.664 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:33:22.835 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:33:32.675 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:33:32.849 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:33:42.597 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:33:42.597 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:33:42.597 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:33:42.680 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:33:42.867 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:33:52.686 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:33:52.872 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:34:02.615 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:34:02.615 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:34:02.615 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:34:02.693 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:34:02.877 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:34:12.700 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:34:12.884 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:34:22.636 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:34:22.636 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:34:22.636 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:34:22.708 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:34:22.890 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:34:32.716 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:34:32.897 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:34:42.720 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:34:42.720 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:34:42.720 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:34:42.721 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:34:42.904 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:34:52.725 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:34:52.908 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:35:02.730 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:35:02.731 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:35:02.731 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:35:02.731 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:35:02.914 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:35:12.737 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:35:12.920 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:35:22.741 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:35:22.741 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:35:22.741 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:35:22.741 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:35:22.931 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:35:32.745 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:35:32.938 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:35:42.753 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:35:42.753 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:35:42.753 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:35:42.753 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:35:42.945 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:35:52.760 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:35:52.950 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:36:02.768 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:36:02.768 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:36:02.768 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:36:02.768 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:36:02.955 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:36:12.772 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:36:12.961 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:36:22.777 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:36:22.778 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:36:22.778 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:36:22.778 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:36:22.967 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:36:32.782 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:36:32.972 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:36:42.787 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:36:42.788 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:36:42.788 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:36:42.788 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:36:42.975 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:36:52.793 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:36:52.979 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:37:02.800 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:37:02.800 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:37:02.800 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:37:02.800 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:37:02.983 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:37:12.804 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:37:12.989 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:37:22.810 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:37:22.810 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:37:22.810 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:37:22.810 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:37:22.994 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:37:32.813 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:37:32.999 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:37:42.820 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:37:42.820 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:37:42.821 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:37:42.821 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:37:43.004 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:37:52.827 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:37:53.010 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:38:02.829 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:38:02.829 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:38:02.829 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:38:02.829 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:38:03.017 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:38:12.837 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:38:13.022 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:38:22.841 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:38:22.841 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:38:22.841 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:38:22.841 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:38:23.027 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:38:32.846 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:38:33.033 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:38:42.850 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:38:42.850 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:38:42.850 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:38:42.850 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:38:43.037 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:38:52.859 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:38:53.044 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:39:02.863 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:39:02.863 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:39:02.863 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:39:02.863 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:39:03.048 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:39:12.869 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:39:13.053 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:39:22.874 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:39:22.874 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:39:22.874 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:39:22.874 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:39:23.056 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:39:32.879 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:39:33.062 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:39:42.882 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:39:42.882 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:39:42.882 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:39:42.882 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:39:43.066 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:39:52.888 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:39:53.072 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:40:02.895 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:40:02.895 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:40:02.895 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:40:02.895 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:40:03.079 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:40:12.899 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:40:13.087 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:40:22.904 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:40:22.904 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:40:22.904 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:40:22.904 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:40:23.094 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:40:32.910 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:40:33.103 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:40:42.919 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:40:42.920 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:40:42.920 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:40:42.920 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:40:43.108 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:40:52.922 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:40:53.114 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:41:02.931 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:41:02.931 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:41:02.931 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:41:02.931 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:41:03.120 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:41:12.934 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:41:13.125 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:41:22.940 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:41:22.940 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:41:22.940 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:41:22.940 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:41:23.130 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:41:32.945 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:41:33.135 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:41:42.963 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:41:42.963 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:41:42.963 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:41:42.963 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:41:43.138 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:41:52.968 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:41:53.144 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:42:02.975 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:42:02.975 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:42:02.975 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:42:02.975 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:42:03.148 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:42:12.980 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:42:13.156 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:42:22.983 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:42:22.983 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:42:22.984 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:42:22.984 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:42:23.159 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:42:32.987 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:42:33.165 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:42:42.992 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:42:42.992 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:42:42.992 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:42:42.992 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:42:43.170 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:42:52.995 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:42:53.173 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:43:03.000 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:43:03.000 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:43:03.000 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:43:03.000 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:43:03.175 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:43:13.005 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:43:13.182 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:43:23.008 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:43:23.008 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:43:23.008 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:43:23.008 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:43:23.188 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:43:33.013 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:43:33.193 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:43:43.022 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:43:43.022 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:43:43.022 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:43:43.022 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:43:43.197 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:43:53.026 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:43:53.201 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:44:03.031 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:44:03.031 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:44:03.031 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:44:03.031 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:44:03.204 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:44:13.036 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:44:13.208 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:44:23.040 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:44:23.040 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:44:23.040 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:44:23.041 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:44:23.213 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:44:33.044 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:44:33.217 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:44:43.049 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:44:43.049 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:44:43.050 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:44:43.050 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:44:43.223 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:44:53.052 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:44:53.225 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:45:03.056 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:45:03.056 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:45:03.056 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:45:03.057 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:45:03.228 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:45:13.060 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:45:13.232 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:45:23.063 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:45:23.063 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:45:23.063 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:45:23.064 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:45:23.237 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:45:33.068 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:45:33.244 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:45:43.071 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:45:43.071 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:45:43.071 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:45:43.071 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:45:43.248 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:45:53.076 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:45:53.254 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:46:03.082 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:46:03.082 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:46:03.082 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:46:03.082 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:46:03.258 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:46:13.085 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:46:13.261 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:46:23.088 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:46:23.088 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:46:23.088 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:46:23.088 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:46:23.266 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:46:33.093 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:46:33.270 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:46:43.099 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:46:43.099 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:46:43.100 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:46:43.100 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:46:43.273 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:46:53.105 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:46:53.280 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:47:03.109 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:47:03.109 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:47:03.109 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:47:03.109 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:47:03.283 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:47:13.113 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:47:13.298 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:47:23.130 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:47:23.130 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:47:23.130 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:47:23.136 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:47:23.301 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:47:33.139 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:47:33.303 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:47:43.145 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:47:43.145 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:47:43.145 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:47:43.145 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:47:43.308 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:47:53.147 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:47:53.312 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:48:03.152 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:48:03.152 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:48:03.152 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:48:03.152 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:48:03.314 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:48:13.156 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:48:13.322 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:48:23.159 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:48:23.160 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:48:23.160 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:48:23.160 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:48:23.327 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:48:33.165 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:48:33.333 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:48:43.172 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:48:43.172 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:48:43.172 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:48:43.172 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:48:43.338 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:48:53.175 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:48:53.345 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:49:03.181 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:49:03.181 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:49:03.181 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:49:03.181 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:49:03.350 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:49:13.185 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:49:13.362 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:49:23.190 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:49:23.190 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:49:23.190 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:49:23.190 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:49:23.366 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:49:33.194 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:49:33.369 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:49:43.201 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:49:43.202 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:49:43.202 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:49:43.202 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:49:43.372 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:49:53.204 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:49:53.374 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:50:03.208 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:50:03.208 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:50:03.208 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:50:03.208 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:50:03.379 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:50:13.212 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:50:13.383 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:50:23.216 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:50:23.217 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:50:23.217 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:50:23.217 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:50:23.388 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:50:33.220 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:50:33.393 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:50:43.224 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:50:43.224 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:50:43.224 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:50:43.224 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:50:43.397 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:50:53.228 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:50:53.401 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:51:03.234 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:51:03.234 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:51:03.234 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:51:03.234 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:51:03.404 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:51:13.240 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:51:13.411 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:51:23.244 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:51:23.244 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:51:23.244 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:51:23.244 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:51:23.416 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:51:33.250 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:51:33.420 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:51:43.255 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:51:43.255 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:51:43.255 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:51:43.255 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:51:43.427 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:51:53.258 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:51:53.432 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:52:03.263 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:52:03.263 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:52:03.263 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:52:03.263 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:52:03.435 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:52:13.268 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:52:13.441 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:52:23.271 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:52:23.272 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:52:23.272 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:52:23.272 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:52:23.446 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:52:33.277 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:52:33.451 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:52:43.280 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:52:43.280 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:52:43.280 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:52:43.280 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:52:43.455 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:52:53.283 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:52:53.460 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:53:03.287 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:53:03.287 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:53:03.287 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:53:03.287 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:53:03.462 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:53:13.292 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:53:13.483 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:53:23.293 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:53:23.293 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:53:23.293 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:53:23.303 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:53:23.487 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:53:33.307 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:53:33.492 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:53:43.334 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:53:43.334 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:53:43.335 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:53:43.335 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:53:43.497 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:53:53.339 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:53:53.502 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:54:03.342 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:54:03.342 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:54:03.342 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:54:03.345 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:54:03.506 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:54:13.350 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:54:13.512 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:54:23.347 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:54:23.347 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:54:23.347 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:54:23.355 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:54:23.517 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:54:33.358 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:54:33.523 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:54:43.362 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:54:43.362 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:54:43.362 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:54:43.364 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:54:43.528 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:54:53.368 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:54:53.547 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:55:03.373 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:55:03.373 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:55:03.373 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:55:03.373 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:55:03.552 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:55:13.376 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:55:13.557 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:55:23.379 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:55:23.380 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:55:23.380 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:55:23.380 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:55:23.563 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:55:33.384 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:55:33.567 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:55:43.392 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:55:43.392 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:55:43.392 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:55:43.392 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:55:43.570 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:55:53.397 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:55:53.574 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:56:03.400 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:56:03.400 [plan-generator ] INFO  generator.GeneratorAgent       - time for sending metrics
+16:56:03.400 [plan-generator ] INFO  messageProcessor.MessageProcessor - queue is empty
+16:56:03.400 [Thread-3       ] INFO  generator.Generator            - Generator starts the job
+16:56:03.601 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]
+16:56:13.436 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer CD2FC6AC-B7F9FBA3, TOPIC_METRICS, broker-server-2, 0.0,  ]
+16:56:13.608 [plan-generator ] INFO  messageProcessor.MessageProcessor - added to queue[ local-load-analyzer EC8A36-FD163219, TOPIC_METRICS, broker-server-1, 80,  ]

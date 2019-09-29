@@ -1,8 +1,8 @@
-package ms.shabykeev.loadbalancer.plan;
+package ms.shabykeev.loadbalancer.plan.server;
 
 import de.hasenburg.geobroker.commons.communication.ZMQControlUtility;
 import de.hasenburg.geobroker.commons.communication.ZMQProcess;
-import ms.shabykeev.loadbalancer.common.Plan;
+import ms.shabykeev.loadbalancer.common.ZMsgType;
 import ms.shabykeev.loadbalancer.plan.generator.GeneratorAgent;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -16,15 +16,13 @@ public class ZMQProcess_PlanServer extends ZMQProcess {
 
     private String frontendAddress = "tcp://127.0.0.1:6061";
     private String backendAddress = "tcp://127.0.0.1:6062";
-    private ArrayList<String> loadBalancers;
-    private ArrayList<Plan> plans = new ArrayList<>();
-
+    private Set<String> loadBalancers = new HashSet<>();
 
     private ZContext context;
     private ZMQ.Socket frontend;
     private ZMQ.Socket backend;
     private ZMQ.Socket metrics_pipe;
-    private ZMQ.Socket generator_pipe;
+    private ZFrame plan;
 
     // socket indices
     private final int FRONTEND_INDEX = 0;
@@ -32,6 +30,7 @@ public class ZMQProcess_PlanServer extends ZMQProcess {
     private final int METRICS_PIPE_INDEX = 2;
 
     private Integer planGenerationDelay = 0;
+
 
 
     ZMQProcess_PlanServer(String address, int frontendPort, int backendPort, String serverId, Integer planGenerationDelay) {
@@ -48,7 +47,7 @@ public class ZMQProcess_PlanServer extends ZMQProcess {
                 handleBackendMessages(msg);
                 break;
             case FRONTEND_INDEX:
-
+                handleFrontendMessages(msg);
                 break;
             case METRICS_PIPE_INDEX:
                 handleMetricsPipeMessage(msg);
@@ -66,7 +65,7 @@ public class ZMQProcess_PlanServer extends ZMQProcess {
         frontend = context.createSocket(SocketType.ROUTER);
         frontend.setHWM(10000);
         frontend.setIdentity(frontendAddress.getBytes(ZMQ.CHARSET));
-        frontend.connect(frontendAddress);
+        frontend.bind(frontendAddress);
         frontend.setSendTimeOut(1);
         socketArray[FRONTEND_INDEX] = frontend;
 
@@ -89,26 +88,37 @@ public class ZMQProcess_PlanServer extends ZMQProcess {
         forwardToMetricsPipe(msg);
     }
 
+    private void handleFrontendMessages(ZMsg msg){
+        String sender = msg.popString();
+        String msgType = msg.popString();
+
+        if (msgType.equals(ZMsgType.REG_LOAD_BALANCER.toString())){
+            loadBalancers.add(sender);
+
+            ZMsg ack = new ZMsg();
+            ack.add(sender);
+            ack.add(ZMsgType.ACKREG_LOAD_BALANCER.toString());
+            if (plan != null){
+                ack.add(plan);
+            }
+            ack.send(frontend);
+            msg.destroy();
+        }
+    }
+
     private void forwardToMetricsPipe(ZMsg msg){
         msg.send(metrics_pipe);
     }
 
     private void handleMetricsPipeMessage(ZMsg msg){
-        logger.info("Sending plan to load balancers" + msg.toString());
-        /*
         String msgType = msg.getFirst().toString();
 
-
-        if (msgType.equals(ZMsgType.SEND_PLAN)){
+        if (msgType.equals(ZMsgType.PLAN.toString())){
             for(String lbId: loadBalancers){
-                ZMsg msgPlan = new ZMsg();
-                msgPlan.add(new ZFrame(lbId));
-                msgPlan.add(ZMsgType.PLAN.toString());
-                msgPlan.add(plans.toString());
-                msgPlan.send(frontend);
+                msg.push(lbId);
+                msg.send(frontend);
             }
         }
-        */
     }
 
     @Override

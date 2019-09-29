@@ -5,3 +5,4 @@ backendPort = 7001
 address = "tcp://127.0.0.1"
 
 planGenerationDelay = 10
+planCreatorAddress = "tcp://127.0.0.1:7000"

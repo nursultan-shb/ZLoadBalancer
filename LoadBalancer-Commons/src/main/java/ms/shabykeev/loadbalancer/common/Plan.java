@@ -25,4 +25,9 @@ public class Plan {
     private String topic;
     private String server;
 
+    @Override
+    public String toString(){
+        return topic + ":" + server;
+    }
+
 }

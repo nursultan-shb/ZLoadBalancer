@@ -1,18 +1,17 @@
 package ms.shabykeev.loadbalancer.server;
 
 
-import com.google.gson.Gson;
 import de.hasenburg.geobroker.commons.communication.ZMQControlUtility;
 import de.hasenburg.geobroker.commons.communication.ZMQProcess;
+import de.hasenburg.geobroker.commons.model.KryoSerializer;
 import ms.shabykeev.loadbalancer.common.Plan;
 import ms.shabykeev.loadbalancer.common.ZMsgType;
+import ms.shabykeev.loadbalancer.common.server.InternalServerMessage;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.zeromq.*;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public class ZMQProcess_LoadBalancer extends ZMQProcess {
 
@@ -22,30 +21,44 @@ public class ZMQProcess_LoadBalancer extends ZMQProcess {
     private String ip;
     private int frontend_port;
     private int backend_port;
+    private ZMQ.Socket state_pipe;
 
     // socket indices
     private final int FRONTEND_INDEX = 0;
     private final int BACKEND_INDEX = 1;
+    private final int STATE_PIPE_INDEX = 2;
 
-    private ArrayList<Plan> plan = new ArrayList<>();
+    private String planCreatorAddress;
 
-    ZMQProcess_LoadBalancer(String identity, String ip, int frontendPort, int backendPort){
+    private KryoSerializer kryo = new KryoSerializer();
+
+    private HashSet<String> brokers = new HashSet<>();
+    private HashMap<String, String> planMap = new HashMap<>();
+    private Boolean isDefaultPlanActive = true;
+
+    ZMQProcess_LoadBalancer(String identity, String ip, int frontendPort, int backendPort, String planCreatorAddress) {
         super(identity);
         this.ip = ip;
         this.frontend_port = frontendPort;
         this.backend_port = backendPort;
+        this.planCreatorAddress = planCreatorAddress;
+
+        planMap.put("red", "broker-server-1");
+        planMap.put("rose", "broker-server-1");
+        planMap.put("blue", "broker-server-2");
+        planMap.put("ocean", "broker-server-2");
     }
 
     @Override
     protected List<ZMQ.Socket> bindAndConnectSockets(ZContext context) {
-        ZMQ.Socket[] socketArray = new ZMQ.Socket[2];
+        ZMQ.Socket[] socketArray = new ZMQ.Socket[3];
         String frontendAddress = ip + ":" + frontend_port;
-        String backendAddress =  ip + ":" + backend_port;
+        String backendAddress = ip + ":" + backend_port;
 
         ZMQ.Socket frontend = context.createSocket(SocketType.ROUTER);
         frontend.setHWM(10000);
-        frontend.connect(frontendAddress);
-        frontend.setIdentity(identity.getBytes());
+        frontend.setIdentity(frontendAddress.getBytes(ZMQ.CHARSET));
+        frontend.bind(frontendAddress);
         frontend.setSendTimeOut(1);
         socketArray[FRONTEND_INDEX] = frontend;
 
@@ -56,6 +69,11 @@ public class ZMQProcess_LoadBalancer extends ZMQProcess {
         backend.setSendTimeOut(1);
         socketArray[BACKEND_INDEX] = backend;
 
+        Agent agent = new Agent();
+        Object[] args = new Object[0];
+        state_pipe = ZThread.fork(context, agent, args);
+        socketArray[STATE_PIPE_INDEX] = state_pipe;
+
         return Arrays.asList(socketArray);
     }
 
@@ -63,42 +81,88 @@ public class ZMQProcess_LoadBalancer extends ZMQProcess {
     protected void processZMsg(int socketIndex, ZMsg msg) {
         switch (socketIndex) {
             case BACKEND_INDEX:
-                ZFrame frame = msg.pollLast();
-
-                if (frame.toString().equals(ZMsgType.ZPING.toString())){
-                    msg.addLast(ZMsgType.ZPONG.toString());
-                    msg.send(sockets.get(BACKEND_INDEX));
-                    break;
-                }
-                if (frame.toString().equals(ZMsgType.PLAN.toString())){
-                    updatePlan(msg);
-                }
-
-                if (!msg.send(sockets.get(FRONTEND_INDEX))) {
-                    logger.warn("Dropping response to client as HWM reached.");
-                }
+                handleBackendMessage(msg);
                 break;
             case FRONTEND_INDEX:
-                sendToBackend(msg);
+                handleFrontendMessage(msg);
+                break;
+            case STATE_PIPE_INDEX:
+                handlePipeMessage(msg);
                 break;
             default:
                 logger.error("Cannot process message for socket at index {}, as this index is not known.", socketIndex);
         }
     }
 
-    private void sendToBackend(ZMsg msg){
-
-        //TODO send to specific gb servers
-        if (!msg.send(sockets.get(BACKEND_INDEX))) {
-            logger.warn("Dropping client request as HWM reached.");
+    private void handleFrontendMessage(ZMsg msg) {
+        ZMsg msgCopy = msg.duplicate();
+        Optional<InternalServerMessage> messageO = InternalServerMessage.buildMessage(msg, kryo);
+        if (messageO.isPresent()) {
+            InternalServerMessage message = messageO.get();
+            switch (message.getControlPacketType()) {
+                case SUBSCRIBE:
+                    String subTopic = message.getPayload().getSUBSCRIBEPayload().getTopic().getTopic();
+                    msgCopy.push(planMap.get(subTopic));
+                    msgCopy.send(sockets.get(BACKEND_INDEX));
+                    break;
+                case PUBLISH:
+                    String pubTopic = message.getPayload().getPUBLISHPayload().getTopic().getTopic();
+                    msgCopy.push(planMap.get(pubTopic));
+                    msgCopy.send(sockets.get(BACKEND_INDEX));
+                    break;
+                default:
+                    for (String broker : brokers) {
+                        msgCopy.push(broker);
+                        msgCopy.send(sockets.get(BACKEND_INDEX));
+                    }
+                    break;
+            }
         }
     }
 
-    private void updatePlan(ZMsg msg){
+    private void handleBackendMessage(ZMsg msg) {
+        if (msg.size() == 2) {
+            String sender = msg.popString();
+            brokers.add(sender);
+
+            ZMsg reply = new ZMsg();
+            reply.add(sender);
+            reply.add(ZMsgType.PINGRESP.toString());
+            reply.send(sockets.get(BACKEND_INDEX));
+            msg.destroy();
+            return;
+        }
+
+        String broker = msg.popString();
+        if (!msg.send(sockets.get(FRONTEND_INDEX))) {
+            logger.warn("Dropping response to client as HWM reached.");
+        }
+    }
+
+    private void handlePipeMessage(ZMsg msg) {
+        updatePlan(msg);
+    }
+
+    private void updatePlan(ZMsg msg) {
+        String strPlan = msg.popString();
+        if (strPlan.length() > 3) {
+            planMap.clear();
+
+            logger.info("\nReceived a new plan");
+
+            for (String el: strPlan.split("\\|")){
+                String[] values = el.split("=");
+                planMap.put(values[0].trim(), values[1].trim());
+                logger.info(el);
+            }
+        }
+
+        /*
         plan.clear();
         ZFrame frame = msg.pollLast();
         Gson gson = new Gson();
         plan = gson.fromJson(frame.toString(), ArrayList.class);
+        */
     }
 
     //region shutdownCompleted
@@ -107,7 +171,6 @@ public class ZMQProcess_LoadBalancer extends ZMQProcess {
         logger.info("Shut down ZMQProcess_Server {}", "");
     }
     //endregion
-
 
     @Override
     protected void utilizationCalculated(double utilization) {

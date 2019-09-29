@@ -1,5 +1,10 @@
 package ms.shabykeev.loadbalancer.common.server;
 
+/**
+ * Author: Jonathan Hasenburg
+ * Source: https://github.com/MoeweX/geobroker
+ * */
+
 public class ServerLifeCycle {
 
     private final IServerLogic serverLogic;

@@ -1,4 +1,4 @@
-package ms.shabykeev.loadbalancer.plan;
+package ms.shabykeev.loadbalancer.plan.server;
 
 import de.hasenburg.geobroker.commons.Utility;
 import de.hasenburg.geobroker.commons.communication.ZMQProcessManager;
