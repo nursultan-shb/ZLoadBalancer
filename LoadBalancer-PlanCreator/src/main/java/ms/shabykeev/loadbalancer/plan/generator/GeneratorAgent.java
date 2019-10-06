@@ -42,7 +42,7 @@ public class GeneratorAgent implements ZThread.IAttachedRunnable {
             }
 
             if (System.currentTimeMillis() - lastPlanGenerationTime >= planGenerationDelay) {
-                logger.info("time for sending metrics");
+                logger.info("time for sending metrics and plan generation");
                 messageProcessor.sendMetrics();
                 lastPlanGenerationTime = System.currentTimeMillis();
             }

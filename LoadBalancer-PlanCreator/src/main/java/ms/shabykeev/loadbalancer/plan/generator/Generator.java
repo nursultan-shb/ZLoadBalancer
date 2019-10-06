@@ -12,12 +12,9 @@ import org.zeromq.ZContext;
 import org.zeromq.ZMQ;
 import org.zeromq.ZMsg;
 
-import javax.xml.crypto.dsig.keyinfo.KeyValue;
 import java.util.*;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
-import static java.util.stream.Collectors.averagingDouble;
 import static java.util.stream.Collectors.groupingBy;
 import static java.util.stream.Collectors.reducing;
 
@@ -29,10 +26,11 @@ public class Generator extends Thread {
     public ZMQ.Socket pairSocket;
 
     private Integer planNumber = 0;
-    private Long lastGenerationTime = 0L;
     private static final Double SERVER_LOAD_THRESHOLD = 5D;
+    private static final Integer ALL_SUBS_THRESHOLD = 10;
 
-    private ArrayList<TopicMetrics> topicMetrics = new ArrayList<>();
+    private ArrayList<TopicMetrics> topicPubMessages = new ArrayList<>();
+    private ArrayList<TopicMetrics> topicSubMessages = new ArrayList<>();
     private ArrayList<ServerLoadMetrics> serverLoadMetrics = new ArrayList<>();
     private HashMap<String, String> planMap = new HashMap<>();
 
@@ -47,9 +45,15 @@ public class Generator extends Thread {
     @Override
     public void run() {
         while (!Thread.currentThread().isInterrupted()) {
-            String msg = pairSocket.recvStr();
-            logger.info("Generator starts the job");
-            managePlan(msg);
+            try {
+                String msg = pairSocket.recvStr();
+                logger.info("Generator starts the job");
+                managePlan(msg);
+            }
+            catch (Exception ex){
+                logger.error(ex);
+            }
+
         }
     }
 
@@ -57,7 +61,7 @@ public class Generator extends Thread {
 
         if (metrics.length() > 3) {
 
-            parseData(metrics);
+            parseMessages(metrics);
             ArrayList<Plan> newPlans = createPlan();
             boolean isDifferent = mergePlan(newPlans);
 
@@ -76,32 +80,42 @@ public class Generator extends Thread {
         msg.send(pairSocket);
     }
 
-    private void parseData(String metrics) {
+    private void parseMessages(String metrics) {
         if (metrics.length() <= 3) return;
 
         clearData();
 
         ArrayList<ServerLoadMetrics> lmList = new ArrayList<>();
-        ArrayList<TopicMetrics> tmList = new ArrayList<>();
+        ArrayList<TopicMetrics> topicPubMessagesList = new ArrayList<>();
+        ArrayList<TopicMetrics> topicSubMessagesList = new ArrayList<>();
 
         metrics = deleteEdgeSymbols(metrics.trim());
         String[] strValues = metrics.split("],");
 
         for (String strValue : strValues) {
             String value = replaceSpecialCharacters(strValue);
-            String[] elements = value.split(",");
+            String[] elements = Arrays.stream(value.split(",")).map(String::trim).toArray(String[]::new);
 
             if (value.contains(ZMsgType.TOPIC_METRICS.toString())) {
-                String server = elements[2].trim();
+                String server = elements[2];
                 ServerLoadMetrics slm = new ServerLoadMetrics(server, elements[0], Double.valueOf(elements[3]));
                 lmList.add(slm);
 
-                if (elements.length > 4) { //a message contains topic metrics
-                    ArrayList tm = parseTopicMetrics(elements[4].trim(), server);
-                    tmList.addAll(tm);
+                //parse topic metrics
+                if (elements.length > 4) {
+                    topicPubMessagesList.addAll(parseTopicMetrics(elements[4], server));
+                    topicSubMessagesList.addAll(parseTopicMetrics(elements[5], server));
                 }
             }
         }
+
+        serverLoadMetrics.addAll(aggregateServerLoadMetrics(lmList));
+        topicPubMessages.addAll(aggregateTopicMetrics(topicPubMessagesList));
+        topicSubMessages.addAll(aggregateTopicMetrics(topicSubMessagesList));
+    }
+
+    private ArrayList<ServerLoadMetrics> aggregateServerLoadMetrics(ArrayList<ServerLoadMetrics> lmList){
+        ArrayList<ServerLoadMetrics> slAggMetrics = new ArrayList<>();
 
         Map<String, Optional<ServerLoadMetrics>> lmMap = lmList.stream()
                 .collect(groupingBy(ServerLoadMetrics::getServer,
@@ -110,9 +124,15 @@ public class Generator extends Thread {
         for (Map.Entry element : lmMap.entrySet()) {
             Object obj = element.getValue();
             if (obj != null) {
-                serverLoadMetrics.add(((Optional<ServerLoadMetrics>) obj).get());
+                slAggMetrics.add(((Optional<ServerLoadMetrics>) obj).get());
             }
         }
+
+        return slAggMetrics;
+    }
+
+    private ArrayList<TopicMetrics> aggregateTopicMetrics(ArrayList<TopicMetrics> tmList){
+        ArrayList<TopicMetrics> topicAggMetrics = new ArrayList<>();
 
         Map<String, Map<String, Optional<TopicMetrics>>> tmMap = tmList.stream()
                 .collect(groupingBy(TopicMetrics::getServer, groupingBy(TopicMetrics::getTopic,
@@ -125,11 +145,13 @@ public class Generator extends Thread {
                 for (Map.Entry nestedElement : nestedMap.entrySet()) {
                     Object nestedObject = nestedElement.getValue();
                     if (nestedObject != null) {
-                        topicMetrics.add(((Optional<TopicMetrics>) nestedObject).get());
+                        topicAggMetrics.add(((Optional<TopicMetrics>) nestedObject).get());
                     }
                 }
             }
         }
+
+        return topicAggMetrics;
     }
 
     private boolean mergePlan(ArrayList<Plan> plans){
@@ -156,7 +178,7 @@ public class Generator extends Thread {
         ServerLoadMetrics leastLm = getLeastLoadedServer();
 
         for (ServerLoadMetrics slm : serverLoadMetrics) {
-            if (slm.getLoad() >= SERVER_LOAD_THRESHOLD && topicMetrics.size() > 0) {
+            if (slm.getLoad() >= SERVER_LOAD_THRESHOLD && topicPubMessages.size() > 0) {
                 TopicMetrics tm = getMostLoadedTopic(slm.getServer());
                 if (tm != null) {
                     tm.setServer(leastLm.getServer());
@@ -165,7 +187,7 @@ public class Generator extends Thread {
         }
 
         ArrayList<Plan> newPlans = new ArrayList<>();
-        topicMetrics.forEach(s -> newPlans.add(new Plan(s.getTopic(), s.getServer())));
+        topicPubMessages.forEach(s -> newPlans.add(new Plan(s.getTopic(), s.getServer())));
         return newPlans;
     }
 
@@ -196,7 +218,7 @@ public class Generator extends Thread {
     }
 
     private TopicMetrics getMostLoadedTopic(String server) {
-        TopicMetrics tm = topicMetrics.stream()
+        TopicMetrics tm = topicPubMessages.stream()
                 .filter(s -> s.getServer().equals(server))
                 .max(Comparator.comparing(TopicMetrics::getMessagesCount)).orElse(null);
 
@@ -229,11 +251,12 @@ public class Generator extends Thread {
     }
 
     private String replaceSpecialCharacters(String str) {
-        return str.replace("[", "").replace("]", "").trim();
+        return str.replace("[", "").replace("]", "");
     }
 
     private void clearData(){
-        this.topicMetrics.clear();
+        this.topicPubMessages.clear();
+        this.topicSubMessages.clear();
         this.serverLoadMetrics.clear();
     }
 

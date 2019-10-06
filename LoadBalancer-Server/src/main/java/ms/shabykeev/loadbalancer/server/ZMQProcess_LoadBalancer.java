@@ -45,8 +45,8 @@ public class ZMQProcess_LoadBalancer extends ZMQProcess {
 
         planMap.put("red", "broker-server-1");
         planMap.put("rose", "broker-server-1");
-        planMap.put("blue", "broker-server-2");
-        planMap.put("ocean", "broker-server-2");
+        planMap.put("blue", "broker-server-1");
+        planMap.put("ocean", "broker-server-1");
     }
 
     @Override
@@ -148,7 +148,7 @@ public class ZMQProcess_LoadBalancer extends ZMQProcess {
         if (strPlan.length() > 3) {
             planMap.clear();
 
-            logger.info("\nReceived a new plan");
+            logger.info("\nReceived a new plan update(s)");
 
             for (String el: strPlan.split("\\|")){
                 String[] values = el.split("=");
@@ -156,13 +156,6 @@ public class ZMQProcess_LoadBalancer extends ZMQProcess {
                 logger.info(el);
             }
         }
-
-        /*
-        plan.clear();
-        ZFrame frame = msg.pollLast();
-        Gson gson = new Gson();
-        plan = gson.fromJson(frame.toString(), ArrayList.class);
-        */
     }
 
     //region shutdownCompleted
